@@ -25,3 +25,19 @@ def student2_add_answer(filename):
         print("Студент 2: відповідь додано")
     except IOError as e:
         print("Помилка запису у файл:", e)
+
+# ---------- Студент 3: Тарасенко С ----------
+# Додавання відповіді та питання третього студента
+
+def student3_add_answer(filename):
+    try:
+        with open(filename, "a", encoding="utf-8") as file:
+            file.write("Студент 3: Тарасенко С\n")
+            file.write("Відповідь:\n")
+            file.write("Списки зберігають елементи у визначеному порядку,\n")
+            file.write("а словники працюють з ключами та значеннями.\n")
+            file.write("Питання: Наведіть приклад використання файлів у Python.\n\n")
+        print("Студент 3: відповідь додано")
+    except IOError as e:
+        print("Помилка запису у файл:", e)
+
