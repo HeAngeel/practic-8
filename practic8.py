@@ -41,3 +41,28 @@ def student3_add_answer(filename):
     except IOError as e:
         print("Помилка запису у файл:", e)
 
+
+# ---------- Студент 4: Лифар Я ----------
+# Завершальна відповідь
+
+def student4_add_answer(filename):
+    try:
+        with open(filename, "a", encoding="utf-8") as file:
+            file.write("Студент 4: Лифар Я\n")
+            file.write("Відповідь:\n")
+            file.write("Файли у Python використовуються для збереження інформації,\n")
+            file.write("читання та запису даних між програмами.\n")
+        print("Студент 4: відповідь додано")
+    except IOError as e:
+        print("Помилка запису у файл:", e)
+
+# ---------- Головна частина програми ----------
+filename = "discussion.txt"
+
+student1_create_file(filename)
+student2_add_answer(filename)
+student3_add_answer(filename)
+student4_add_answer(filename)
+
+print("\nУсі студенти успішно завершили роботу з файлом.")
+
